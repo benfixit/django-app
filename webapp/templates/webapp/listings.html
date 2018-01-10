@@ -1,0 +1,16 @@
+{% extends "webapp/layout/front.html" %}
+
+{% block title %}
+  Django App - Listings Page
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+      <h2>List of Users in the database</h2>
+      <ul class="list-group">
+          {% for user in object_list %}
+            <li class="list-group-item">{{ user.name }} - {{ user.email }}</li>
+          {% endfor %}
+      </ul>
+  </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+.jumbotron {
+    background: #ffffff;
+}
+
+.error, .success {
+    font-size: 13px;
+    font-family: 'Open Sans', arial, helvetica;
+    padding: 6px;
+    border: 1px solid #c2c2c2;
+}
+
+.error {
+    border-radius: 3px;
+    background: #ffffff;
+    display: block;
+    color: #f04125;
+    line-height: 17px;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#submit-btn{
+    width: 100%;
+}
+
+fieldset.form-border {
+    border: 1px solid #ddd !important;
+    border-radius: 5px;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.form-border {
+    width:inherit;
+    padding:0 10px;
+    border-bottom:none;
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+}

@@ -1,0 +1,10 @@
+Assumptions
+Nil
+
+Limitations
+Nil
+
+Improvements
+Email field could be made unique to avoid users registering with the same email address
+Tests could be written to help make the app more bug proof, less liable to failure, improve design etc
+CDN should be used to bring in static files - This will improve app speed

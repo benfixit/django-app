@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <title>
+        {% block title %}
+            Django App - Inya Chukwuemeka
+        {% endblock %}
+      </title>
+
+    <!-- CSS -->
+    {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css">
+  </head>
+
+  <body>
+    {% block navigation %}
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{% url 'index' %}">Task 2 - Django App</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="{% url 'index' %}">Home</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'listings' %}"><span class="fa fa-users"></span> List</a></li>
+                <li><a href="{% url 'add-user' %}"><span class="fa fa-plus"></span> Add</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Javascript -->
+    {% load staticfiles %}
+        <script rel="script" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+        <script rel="script" src="{% static 'js/jquery.validate.min.js' %}"></script>
+        <script rel="script" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script rel="script" src="{% static 'js/waitingfor.js' %}"></script>
+        <script rel="script" src="{% static 'js/bootbox.min.js' %}"></script>
+        <script rel="script" src="{% static 'js/custom.js' %}"></script>
+        <!--<script src="../../../../assets/js/vendor/popper.min.js"></script>-->
+  </body>
+</html>

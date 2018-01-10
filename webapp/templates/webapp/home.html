@@ -1,0 +1,18 @@
+{% extends "webapp/layout/front.html" %}
+
+{% block content %}
+<div class="container">
+  <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Names and Emails</h1>
+            <br>
+          <p class="lead text-muted">Names and Emails contained in the SQLite database.</p>
+          <br><br><br>
+            <p>
+            <a href="{% url 'listings' %}" class="btn btn-primary"><span class="fa fa-users"></span> List of Names and Emails</a>
+            <a href="{% url 'add-user' %}" class="btn btn-success"><span class="fa fa-plus"></span> Add Name/Email Address</a>
+          </p>
+        </div>
+      </section>
+</div>
+{% endblock %}
